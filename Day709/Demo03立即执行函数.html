@@ -4,7 +4,14 @@
 		<meta charset="utf-8">
 		<title></title>
 		<script type="text/javascript">
-			
+			/* (function(){
+				 // alert("匿名函数");
+				 console.log("匿名函数2");
+			 }()) */
+			( function (a,b){
+				 console.log("a= "+a);
+				 console.log("b= "+b);
+			 })(123,456);//立即执行函数
 		</script>
 	</head>
 	<body>
