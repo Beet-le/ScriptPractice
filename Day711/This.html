@@ -5,9 +5,17 @@
 		<title></title>
 		<script type="text/javascript">
 			function fun(){
-				
+				console.log(this);
 			}
-			fun();
+	
+			var obj={
+				name:"BT",
+				satName:fun
+			}
+			console.log(obj.satName==fun);
+			obj.satName();
+			obj.name;
+			
 		</script>
 	</head>
 	<body>
