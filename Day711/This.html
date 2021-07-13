@@ -5,16 +5,22 @@
 		<title></title>
 		<script type="text/javascript">
 			function fun(){
-				console.log(this);
+				console.log(this.name);
 			}
 	
 			var obj={
 				name:"BT",
 				satName:fun
 			}
-			console.log(obj.satName==fun);
+			var obj2={
+				name:"727",
+				satName:fun,
+			}
+			// console.log(obj.satName==fun); 
 			obj.satName();
-			obj.name;
+			obj2.satName();
+			// obj.name;
+			
 			
 		</script>
 	</head>
